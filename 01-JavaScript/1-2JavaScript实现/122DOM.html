@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        #abc {
+            color: #47d451;
+        }
+
+        .a {
+            background-color: #007777;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="abc" class="a"> Hello World!</p>
+</body>
+<!-- 
+    这些代码通过 DOM 可以表示为一组分层节点
+    html 
+    |   head
+        |   title
+            |   Sample Page
+    |   body
+        |   p
+            |Hello World!
+ -->
+<!-- 
+     1. 为什么 DOM 是必需的
+     由于网景和微软采用不同思路开发 DHTML，开发者写一个 HTML 页面就可以在任何浏览器中运行的好
+日子就此终结。
+    为了保持 Web 跨平台的本性，必须要做点什么。人们担心如果无法控制网景和微软各行其是，那
+么 Web 就会发生分裂，导致人们面向浏览器开发网页。
+  -->
+  <!-- 
+    2.DOM级别
+    1998 年 10 月，DOM Level 1 成为 W3C 的推荐标准。这个规范由两个模块组成：DOM Core 和 DOMHTML。
+    前者提供了一种映射 XML 文档，从而方便访问和操作文档任意部分的方式；后者扩展了前者，并增加了特定于 HTML 的对象和方法。
+    DOM Level 1 的目标是映射文档结构，而 DOM Level 2 的目标则宽泛得多。
+    DOM Level 2 新增了以下模块，以支持新的接口。
+          DOM 视图：描述追踪文档不同视图（如应用 CSS 样式前后的文档）的接口。
+          DOM 事件：描述事件及事件处理的接口。
+          DOM 样式：描述处理元素 CSS 样式的接口。
+          DOM 遍历和范围：描述遍历和操作 DOM树的接口。
+    DOM Level 3进一步扩展了 DOM，增加了以统一的方式加载和保存文档的方法（包含在一个叫 DOM
+    Load and Save 的新模块中），还有验证文档的方法（DOM Validation）。
+    目前，W3C 不再按照 Level 来维护 DOM 了，而是作为 DOM Living Standard 来维护，其快照称为DOM4
+   -->
+
+   <!-- 
+       3.其他DOM
+    -->
+
+    <!-- 
+        4. Web 浏览器对 DOM 的支持情况
+     -->
+     <img src="./浏览器对DOM.png" alt="">
+</html>

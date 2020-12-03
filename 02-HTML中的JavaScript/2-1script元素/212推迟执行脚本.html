@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example HTML Page</title>
+    <script defer src="example1.js"></script>
+    <script defer src="example2.js"></script>
+    <!--  defer 属性只对外部脚本文件才有效 -->
+    <!-- 对于 XHTML 文档，指定 defer 属性时应该写成 defer="defer" 。 -->
+</head>
+
+<body>
+    <!-- 
+        HTML 4.01 为 <script> 元素定义了一个叫 defer 的属性。这个属性表示脚本在执行的时候不会改
+        变页面的结构。也就是说，脚本会被延迟到整个页面都解析完毕后再运行。因此，在 <script> 元素上
+        设置 defer 属性，相当于告诉浏览器立即下载，但延迟执行。
+
+        虽然这个例子中的 <script> 元素包含在页面的 <head> 中，但它们会在浏览器解析到结束的</html> 标签后才会执行。
+
+     -->
+
+</body>
+
+</html>

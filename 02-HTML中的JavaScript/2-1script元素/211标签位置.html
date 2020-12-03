@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="example1.js"></script>
+    <!-- 
+        1.将script标签放在head中，目的是把外部的 CSS 和 JavaScript 文件都集中放到一起
+        缺陷:必须把所有 JavaScript 代码都下载、解析和解释完成后，才能开始渲染页面,导致页面渲染的明显延迟
+     -->
+</head>
+
+<body>
+
+
+
+
+
+    <script src="example2.js"></script>
+    <!-- 
+        2.现代 Web 应用程序通常将所有 JavaScript 引用放在 <body> 元素中的页面内容后面
+            优点：页面会在处理 JavaScript 代码之前完全渲染页面。用户会感觉页面加载更快了
+     -->
+</body>
+
+</html>
